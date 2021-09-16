@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muestra de Primitivas+DOM</title>
+    <link rel="stylesheet" href="css/EJS_3.css" type="text/css" />
+    <!--Links de bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="#">¡Javascript!</a></h1>
+    </header>
+    <section class="row container-fluid" id="todo">
+      <aside id="lateral" class="col-sm-3">
+        <select name="" id="temas">
+          <option value="0" disabled>Seleccione...</option>
+          <option value="cajas">Cajas</option>
+          <option value="encuesta">Encuesta</option>
+        </select>
+      </aside>
+      <section id="principal" class="col-sm-9">
+        <article id="cajas" class="contenedor">
+          <h3>Cajas</h3>
+          <br />
+
+          <input
+            type="number"
+            name=""
+            id="numero"
+            placeholder="Introduce el número de cajas"
+          />
+          <br />
+          <br />
+          <label for="">Selecciona el color de las cajas</label>
+          <input
+            type="color"
+            name=""
+            id="color"
+            placeholder="Introduzca un color"
+          />
+          <br />
+          <br />
+          <label for="">Selecciona el borde de las cajas</label>
+          <select id="borde">
+            <option value="0" disabled>Seleccione...</option>
+            <option value="dotted">dotted</option>
+            <option value="dashed">dashed</option>
+            <option value="solid">solid</option>
+            <option value="double">double</option>
+            <option value="groove">groove</option>
+            <option value="ridge">ridge</option>
+            <option value="inset">inset</option>
+            <option value="outset">outset</option>
+            <option value="none">none</option>
+            <option value="hidden">hidden</option>
+          </select>
+          <br />
+          <br />
+
+          <input type="button" value="Mostrar" onclick="mostrarCajas()" />
+          <br />
+          <br />
+          <p id="resultado"></p>
+        </article>
+
+        <article id="encuesta" class="contenedor">
+          <h3>Encuesta</h3>
+          <br />
+          <label for="">¿Qué lugar te gustaría visitar algún día?</label>
+          <select name="" id="lugar">
+            <option value="Tokyo">Tokyo</option>
+            <option value="Paris">Paris</option>
+            <option value="Roma">Roma</option>
+          </select>
+          <br />
+          <br />
+          <label for="">¿Qué has querido estudiar hace tiempo?</label>
+          <select name="" id="estudiar">
+            <option value="Desarrollador de videojuegos">Desarrollador de videojuegos</option>
+            <option value="Cocina">Cocina</option>
+            <option value="Ilustración digital">Ilustración digital</option>
+          </select>
+          <br />
+          <br />
+          <label for="">¿Qué siempre has querido aprender?</label>
+          <select name="" id="aprender">
+            <option value="Skate">Skate</option>
+            <option value="Pintar con acuarelas">Pintar con acuarelas</option>
+            <option value="Esculpir">Esculpir</option>
+          </select>
+          <br />
+          <br />
+          <label for="">¿Dónde es tu lugar ideal para vivir?</label>
+          <select name="" id="vivir">
+            <option value="Japón">Japón</option>
+            <option value="Noruega">Noruega</option>
+            <option value="Nueva Zelanda">Nueva Zelanda</option>
+          </select>
+          <br />
+          <br />
+          <label for="">¿Qué profesión te gustaría ejercer?</label>
+          <select name="" id="profesión">
+            <option value="Artista Conceptual">Artista Conceptual</option>
+            <option value="Programador">Programador</option>
+            <option value="Community manager">Community manager</option>
+          </select>
+          <br />
+          <br />
+          <input type="button" value="Mostrar" onclick="mostrarEncuesta()" />
+          <br />
+          <br />
+          <section id="resultado2"></section>
+        </article>
+      </section>
+    </section>
+
+    <footer>
+      <h6>Realizado Por: Martínez Galván Diego Eduardo</h6>
+    </footer>
+    <script src="js/funcionalidad.js"></script>
+  </body>
+</html>

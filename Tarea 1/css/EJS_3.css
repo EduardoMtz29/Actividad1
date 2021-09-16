@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+#todo {
+  height: auto;
+}
+header {
+  background-color: #222831;
+  text-align: center;
+}
+header a {
+  animation-duration: 1.5s;
+  animation-name: colores;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes colores {
+  from {
+    color: #00ffff;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  to {
+    color: #ff0055;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+}
+header a:hover {
+  animation-play-state: paused;
+}
+section {
+  background-color: #38414e;
+  font-size: 1.2rem;
+}
+#lateral {
+  background-color: #222831;
+  text-align: center;
+  padding: 50px 100px;
+}
+#cajas{
+  color: whitesmoke;
+}
+footer {
+  text-align: center;
+  color: whitesmoke;
+  background-color: #222831;
+  padding: 20px 0;
+}
+.contenedor {
+  width: 99%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  display: none;
+}
+#resultado {
+  transition: all 0.4 ease-in-out;
+}
+.res {
+  color: whitesmoke;
+  width: 99%;
+  line-height: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+#resultado, #encuesta{
+  color: whitesmoke;
+}
